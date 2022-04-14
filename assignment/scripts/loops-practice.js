@@ -167,3 +167,20 @@ while (true) {
 
 // 3.c. TODO: Write a while loop to console.log the numbers from 10 to 5
 console.log('count backwards from 10 to 5');
+
+// Set starting variables
+const startValue = 10 // static
+let value = startValue // dynamic
+const endValue = 5 // static
+const incrementAmount = -1 // static
+
+// Step through the assigned range, containing the 'while' loop.
+// Uses a range to evaluate between
+while ((startValue >= value) && (value >= endValue)) {
+
+  // Log out the current value
+  console.log(`The value is ${value} in 3.c.`)
+
+  // De-increment the value based upon assigned value
+  value += incrementAmount
+}
