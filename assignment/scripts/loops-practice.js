@@ -124,5 +124,46 @@ while (numberLoops > 0) {
 // 3.b. TODO: Write a while loop to console.log the numbers from 0 to 5
 console.log('count from 0 to 5');
 
+// -------------
+// 3.b.1. Conditional within the loop evaluation - constraining the number of loops
+// Reset the count variable
+count = 0
+// Set a maximum value
+let maxCount = 5
+
+// Create loop with bounds set.
+// Because I am using a less-than statement instead of a less-than-or-equal,
+// I need to make sure the max count is raised by one
+while (count < (maxCount + 1)) {
+
+  // Log out the count
+  console.log(`The count in 3.b.1. is ${count}`)
+
+  // Increment count
+  count++
+}
+
+// -------------
+// 3.b.2. An infinite loop that is broken with a 'break' statement
+// Reset the count variable
+count = 0
+// Reset the maxCount (though it should have never been altered)
+maxCount = 5
+
+// Set an infinite loop that is broken with a break statement within an 'if' statement
+while (true) {
+  
+  // Log out the current count
+  console.log(`The count in 3.b.2. is ${count}`)
+
+  // Check if the maxCount is reached and loop should be broken
+  if (count >= maxCount) {
+    break
+  }
+
+  // Otherwise, increment the count
+  count++
+}
+
 // 3.c. TODO: Write a while loop to console.log the numbers from 10 to 5
 console.log('count backwards from 10 to 5');
