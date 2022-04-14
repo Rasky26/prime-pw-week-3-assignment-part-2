@@ -44,7 +44,14 @@ let stars = ['Polaris', 'Gacrux', 'Formalhaut', 'Rigel', 'Deneb']
 
 // 2.a. TODO: Write a for of loop to console.log each star in the 'stars' array
 console.log('Some stars:');
+for (let star of stars) {
+  console.log(`${star} is a star!`)
+}
 
+// Added an enumnerated option to get both index and name of the stars
+for (const [num, star] of stars.entries()) {
+  console.log(`The star ${star} is #${num} in our list!`)
+}
 
 // 3. While loops  
 console.log('---- 3. While loop ----');
